@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <title>PETCORN</title>
+  </head>
+  <body>
+    <div class="Main-wrap">
+      <!--헤더-->
+      <header>
+        <div class="Main-top">
+          <!--div class="menubox"><img src="./asset/menu.png" width="1980px" height="158px"></div-->
+          <a href="#" class="logo"
+            ><img src="./asset/logo.png" width="115px" height="50px"
+          /></a>
+          <button id="signinBtn">Sign In</button>
+          <button id="signupBtn">Sign Up</button>
+        </div>
+      </header>
+
+      <!--메인-->
+      <main>
+        <div class="Main-middle">
+          <div class="biglogo">
+            <h1>PET</h1>
+            <h1>CORN</h1>
+          </div>
+          <div class="maintext"><h1>반려동물을 위해서 시작하세요!</h1></div>
+          <element id="rectangle1"></element>
+          <element id="rectangle2"></element>
+          <element id="rectangle3"></element>
+          <element id="rectangle4"></element>
+          <div class="mainimage"><img src="./asset/main.png" /></div>
+        </div>
+        <div class="Main-about">
+          <h1 id="about">ABOUT</h1>
+          <div class="schedule">
+            <img class="dog1" src="./asset/dog1.png" />
+            <h3 id="title1">반려동물의 일정관리</h3>
+            <h3 id="content1">산책주기, 예방접종 등 일정관리까지</h3>
+            <button id="btn1">GO</button>
+          </div>
+          <div class="adoption">
+            <img class="dog2" src="./asset/dog2.png" />
+            <h3 id="title2">입양 및 실종 정보제공</h3>
+            <h3 id="content2">반려동물의 입양 / 실종신고까지</h3>
+            <button id="btn2">GO</button>
+          </div>
+          <div class="ask">
+            <img class="dog3" src="./asset/dog3.png" />
+            <h3 id="title3">전문가와의 상담 !</h3>
+            <h3 id="content3">반려동물에 대한 전문가의 상담까지</h3>
+            <button id="btn3">GO</button>
+          </div>
+        </div>
+      </main>
+
+      <!--푸터-->
+      <footer>
+        <div class="Main-footer">
+          <img class="minilogo" src="./asset/minilogo.png" />
+          <div class="footer-description">
+            <h6 id="company">(주) PETCORN</h6>
+            <h6 id="number">연락처: 010-8888-9999</h6>
+            <h6 id="email">이메일: s19020@gsm.hs.kr</h6>
+            <h6 id="developer">개발자: 신이삭, 진예원</h6>
+            <element id="line"></element>
+          </div>
+          <div class="footer-menu">
+            <a href="#"><h6 id="footer-ask">전문가 상담</h6></a>
+            <a href="#"><h6 id="footer-schedule">일정 관리</h6></a>
+            <a href="#"><h6 id="footer-adoption">입양 / 실종</h6></a>
+            <a href="#"><h6 id="footer-mypage">마이페이지</h6></a>
+          </div>
+          <div class="footer-sns">
+            <a href="#"><img id="instagram" src="./asset/instagram.png" /></a>
+            <a href="#"><img id="facebook" src="./asset/facebook.png" /></a>
+            <a href="#"><img id="github" src="./asset/github.png" /></a>
+          </div>
+        </div>
+      </footer>
+
+      <!--모달-->
+      <div class="signin-modal">
+        <div id="modalbg"></div>
+        <div class="modal_wrap">
+          <div class="modal-top">
+            <img id="modallogo" src="./asset/logo.png" />
+            <h6 id="modalment">반려동물을 위해 지금이라도 시작하세요!</h6>
+            <div class="close_btn">
+              <a href="#"><img src="./asset/close.png" /></a>
+            </div>
+          </div>
+          <div class="signinform">
+            <p>
+              <input
+                id="input-email"
+                type="text"
+                placeholder="이메일을 입력하세요."
+              />
+            </p>
+            <p>
+              <input
+                id="input-password"
+                type="password"
+                placeholder="비밀번호를 입력하세요."
+              />
+            </p>
+          </div>
+          <div class="modal-bottom">
+            <a href="#"
+              ><h6 id="alreadyaccountBtn">이미 계정이 있으신가요?</h6></a
+            >
+            <button id="modal_signinBtn">로그인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

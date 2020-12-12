@@ -1,0 +1,436 @@
+a {
+  text-decoration: none;
+}
+
+input {
+  position: absolute;
+  width: 450px;
+  height: 40px;
+
+  background: #ffffff;
+  border: 1px solid #1a00c6;
+  box-sizing: border-box;
+}
+
+/* 헤더 */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 1980px;
+  height: 158px;
+  padding: 1rem;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 1;
+}
+
+.logo {
+  position: absolute;
+  left: 99px;
+  top: 54px;
+}
+
+#ask {
+  position: absolute;
+  width: 83px;
+  height: 22px;
+  left: 760px;
+  top: 72px;
+
+  font-family: Apple SD Gothic Neo;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #ff9191;
+}
+
+#schedule {
+  position: absolute;
+  width: 68px;
+  height: 22px;
+  left: 1020px;
+  top: 72px;
+
+  font-family: Apple SD Gothic Neo;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #1a00c6;
+}
+
+#adoption {
+  position: absolute;
+  width: 100px;
+  height: 22px;
+  left: 1280px;
+  top: 72px;
+
+  font-family: Apple SD Gothic Neo;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #1a00c6;
+}
+
+#mypage {
+  position: absolute;
+  width: 78px;
+  height: 22px;
+  left: 1542px;
+  top: 72px;
+
+  font-family: Apple SD Gothic Neo;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #1a00c6;
+}
+
+#logoutBtn {
+  position: absolute;
+  width: 100px;
+  height: 60px;
+  left: 1780px;
+  top: 52px;
+
+  font-family: Fredoka One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #ff9191;
+
+  border: 0;
+  outline: 0;
+  background: white;
+}
+
+#logoutBtn:hover {
+  background-color: #ff9191;
+  color: #ffffff;
+  border-radius: 20px;
+}
+
+/* ask */
+#asktext {
+  position: absolute;
+  width: 1002px;
+  height: 60px;
+  left: 489px;
+  top: 338px;
+
+  font-family: Apple SD Gothic Neo;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 60px;
+
+  color: #1a00c6;
+}
+
+#qaBtn {
+  position: absolute;
+  width: 240px;
+  height: 76px;
+  left: 650px;
+  top: 520px;
+
+  background: #ffffff;
+  border: 2px solid #ff9191;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+  font-family: Apple SD Gothic Neo;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+
+  color: #ff9191;
+}
+
+#hospitalBtn {
+  position: absolute;
+  width: 240px;
+  height: 76px;
+  left: 1089px;
+  top: 520px;
+
+  background: #ffffff;
+  border: 2px solid #ff9191;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+  font-family: Apple SD Gothic Neo;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+
+  color: #ff9191;
+}
+
+/* ask - table */
+#table-title {
+  position: absolute;
+  width: 75px;
+  height: 24px;
+  left: 489px;
+  top: 800px;
+
+  font-family: Apple SD Gothic Neo;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+table {
+  position: absolute;
+  width: 1002px;
+  border-top: 0.5px solid #444444;
+  border-collapse: collapse;
+  top: 870px;
+  left: 489px;
+  text-align: center;
+}
+th,
+td {
+  border-bottom: 0.5px solid #444444;
+  padding: 10px;
+}
+
+th {
+  font-family: Apple SD Gothic Neo;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+td {
+  font-family: Apple SD Gothic Neo;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #000000;
+}
+
+#date,
+#state {
+  color: #989898;
+}
+
+/* footer */
+footer {
+  position: absolute;
+  width: 1920px;
+  height: 314px;
+  left: 0px;
+  top: 1400px;
+
+  background: #ff9191;
+}
+
+.minilogo {
+  position: absolute;
+  width: 155px;
+  height: 66px;
+  left: 54px;
+  top: 67px;
+}
+
+.footer-description {
+  position: absolute;
+  width: 165px;
+  height: 96px;
+  left: 256px;
+  top: 73px;
+}
+
+#company {
+  position: absolute;
+  width: 87px;
+  height: 18px;
+  left: 0px;
+  top: -30px;
+
+  font-family: Apple SD Gothic Neo;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: #ffffff;
+}
+
+#number {
+  position: absolute;
+  width: 180px;
+  height: 18px;
+  left: 0px;
+  top: 0px;
+
+  font-family: Apple SD Gothic Neo;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: #ffffff;
+}
+
+#email {
+  position: absolute;
+  width: 200px;
+  height: 18px;
+  left: 0px;
+  top: 30px;
+
+  font-family: Apple SD Gothic Neo;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: #ffffff;
+}
+
+#developer {
+  position: absolute;
+  width: 180px;
+  height: 18px;
+  left: 0px;
+  top: 60px;
+
+  font-family: Apple SD Gothic Neo;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: #ffffff;
+}
+
+#line {
+  position: absolute;
+  width: 880px;
+  height: 0px;
+  left: -200px;
+  top: 160px;
+
+  border: 0.3px solid #ffffff;
+}
+
+.footer-menu {
+  position: absolute;
+  width: 74px;
+  height: 157px;
+  left: 963px;
+  top: 57px;
+}
+
+#footer-ask {
+  position: absolute;
+  width: 74px;
+  height: 19px;
+  top: -20px;
+
+  font-family: Apple SD Gothic Neo;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+
+#footer-schedule {
+  position: absolute;
+  width: 74px;
+  height: 19px;
+  top: 30px;
+
+  font-family: Apple SD Gothic Neo;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+
+#footer-adoption {
+  position: absolute;
+  width: 74px;
+  height: 19px;
+  top: 80px;
+
+  font-family: Apple SD Gothic Neo;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+
+#footer-mypage {
+  position: absolute;
+  width: 74px;
+  height: 19px;
+  top: 130px;
+
+  font-family: Apple SD Gothic Neo;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+
+.footer-sns {
+  position: absolute;
+  width: 210px;
+  height: 50px;
+  left: 1480px;
+  top: 67px;
+}
+
+#instagram {
+  position: absolute;
+  left: 0px;
+}
+
+#facebook {
+  position: absolute;
+  left: 80px;
+}
+
+#github {
+  position: absolute;
+  left: 160px;
+}

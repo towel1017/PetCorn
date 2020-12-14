@@ -6,6 +6,7 @@ const mysql = require("mysql");
 const session = require("express-session");
 const cors = require("cors");
 const ConsultRouter = require("./routes/petConsult");
+const todoRouter = require("./routes/petTodo");
 var MySQLStore = require("express-mysql-session")(session);
 
 const app = express();
@@ -40,6 +41,7 @@ app.post("/", (req, res) => {
 app.use("/user", userRouter);
 app.use("/pet", petRouter);
 app.use("/consult", ConsultRouter);
+app.use("/todo", todoRouter);
 
 app.listen(port, () => {
   console.log(`express Server Open Port :  ${port}`);

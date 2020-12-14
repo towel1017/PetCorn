@@ -6,20 +6,20 @@ import PetInfoEnroll from "./PetInfoEnroll/PetInfoEnroll";
 const Mypage = () => {
   const [petInfo, setInfo] = useState({});
   const [is_pet, setPet] = useState(false);
-  const isPetCheck = async () => {
-    const response = await Axios.post("/pet");
-    console.log(response.data.is_pet);
-    if (response.data.is_pet === 1) {
-      setPet(true);
-    } else {
-      setPet(false);
-    }
+  const getPetInfo = async () => {
+    const response = await Axios.post("/pet/info");
+    console.log(response);
+    setInfo(response.data);
   };
   useEffect(() => {
-    const getPetInfo = async () => {
-      const response = await Axios.post("/pet/info");
-      console.log(response);
-      setInfo(response.data);
+    const isPetCheck = async () => {
+      const response = await Axios.post("/pet");
+      console.log(response.data.is_pet);
+      if (response.data.is_pet === 1) {
+        setPet(true);
+      } else {
+        setPet(false);
+      }
     };
     isPetCheck();
     if (is_pet) {

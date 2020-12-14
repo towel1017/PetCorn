@@ -102,10 +102,26 @@ consultRouter.get("/detailInfo", (req, res) => {
 consultRouter.get("/detailAnswer", (req, res) => {
   const id = req.query.id;
   const DETAIL_ANSWER_GET_QUERY = `select answer.answerid as "id", user.name, text as "answer", date_format(date, '%Y-%m-%d') as "date" from user, answer where user.userid = answer.userid and boarditemid = ${id}; `;
+  const GET_ANSWER_CHECK_ANSWER = `update qnaboard set is_answer = 1 where boarditemid = ${id}`;
   conn.query(DETAIL_ANSWER_GET_QUERY, (err, rows, field) => {
     if (err) throw err;
-    console.log(rows);
+    console.log("asdasd12321", rows.length);
+    if (rows.length >= 5) {
+      conn.query(GET_ANSWER_CHECK_ANSWER, (err, rows, field) => {
+        if (err) throw err;
+        res.status(200).send("답변완료");
+      });
+    }
     res.status(200).send(rows);
+  });
+});
+consultRouter.post("/delete", (req, res) => {
+  const id = req.body.id;
+  console.log(id);
+  const POST_DELETE_QUESTION = `delete from qnaboard where boarditemid = ${id}`;
+  conn.query(POST_DELETE_QUESTION, (err, rows, field) => {
+    if (err) throw err;
+    res.status(200).send("삭제완료");
   });
 });
 module.exports = consultRouter;
